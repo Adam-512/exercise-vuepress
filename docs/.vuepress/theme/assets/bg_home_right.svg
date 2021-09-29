@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="445px" height="520px" viewBox="0 0 445 520" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>bg_home_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="24.1018136%" x2="21.3664311%" y2="57.2491531%" id="linearGradient-1">
+            <stop stop-color="#F8F8FA" stop-opacity="0.6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="14.1641916%" x2="0%" y2="85.8358084%" id="linearGradient-2">
+            <stop stop-color="#F8F8FA" stop-opacity="0.6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="42.7404266%" x2="100%" y2="71.4653863%" id="linearGradient-3">
+            <stop stop-color="#F8F8FA" stop-opacity="0.6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="OZ-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-1022.000000, -62.000000)">
+            <path d="M1253,644.370355 L1411.07856,644.629197 L1457.76156,632.084229 C1492.70861,622.693024 1517,591.012086 1517,554.8252 L1517,470.315551 C1517,463.688134 1511.62742,458.315551 1505,458.315551 C1503.9395,458.315551 1502.88369,458.45613 1501.86014,458.733615 L1297.36821,514.171385 C1271.24127,521.2544 1253.09283,544.955032 1253.06755,572.025043 L1253,644.370355 L1253,644.370355 Z" id="Fill-1-Copy-19" stroke="url(#linearGradient-1)" stroke-width="2" transform="translate(1385.000000, 549.629197) scale(-1, 1) translate(-1385.000000, -549.629197) "></path>
+            <path d="M1167,463.553043 L1167,526.823885 C1167,530.137593 1169.68629,532.823885 1173,532.823885 C1173.52086,532.823885 1174.0395,532.756062 1174.54285,532.622127 L1313.28566,495.704179 C1330.80606,491.04219 1343,475.179278 1343,457.049228 L1343,393.45225 C1343,390.138542 1340.31371,387.45225 1337,387.45225 C1336.47473,387.45225 1335.95174,387.521225 1335.44444,387.657406 L1196.62958,424.920746 C1179.15095,429.612695 1167,445.455612 1167,463.553043 Z" id="Fill-1-Copy-30" fill="url(#linearGradient-2)" opacity="0.2" transform="translate(1255.000000, 460.129197) scale(-1, 1) rotate(180.000000) translate(-1255.000000, -460.129197) "></path>
+            <path d="M1465.96218,60.629197 L1466,182.451778 L1324.20677,143.713802 C1298.13213,136.590195 1280.03998,112.910983 1280.01933,85.8807664 L1280,60.5816415 L1280,60.5816415 L1465.96218,60.629197 Z" id="Fill-1-Copy-32" fill="url(#linearGradient-3)" opacity="0.2"></path>
+        </g>
+    </g>
+</svg>

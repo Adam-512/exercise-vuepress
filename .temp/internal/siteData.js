@@ -14,34 +14,150 @@ export const siteData = {
         "heroImage": "/favicon-96x96.png",
         "actionBtn": {
           "type": "primary"
+        },
+        "banner": {
+          "leading": "The standard for secure blockchain applications",
+          "description": "OpenZeppelin provides security products to build,automate,and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products."
+        },
+        "section2": {
+          "subLeading": "The world’s leading projects trust OpenZeppelin",
+          "projectsIcons": [
+            "/brave.svg",
+            "/augur.svg",
+            "/ethfund.svg",
+            "/coinbase.svg",
+            "/compound.png",
+            "/bitgo.svg"
+          ],
+          "heading": "The challenges of building decentralized applications",
+          "challenges": [
+            {
+              "leading": "Security",
+              "des": "Economies in which software powers real money are exposed to hacks and attacks."
+            },
+            {
+              "leading": "Developer Experience",
+              "des": "Lack of proper development and testing tools increases programming errors greatly."
+            },
+            {
+              "leading": "Operations",
+              "des": "It’s difficult to manage and fix problems in decentralized systems once they're deployed."
+            }
+          ]
+        },
+        "section3": {
+          "leading": "Your blueprint for decentralized systems",
+          "subLeading": "Reduce barriers to entry by securely implementing blockchain-based technologies, using standard developer tools and platforms.",
+          "productCards": [
+            {
+              "cardImg": "/oz_contracts_blue.svg",
+              "subLeading": "A library of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity.",
+              "desList": [
+                "Leverage standard, tested, and community-reviewed contracts.",
+                "Most popular library in the industry.",
+                "Learn from best practices adopted by the ecosystem.",
+                "Reduce your attack surface by reusing audited code."
+              ],
+              "actions": [
+                {
+                  "text": "visit site",
+                  "link:\"http://www.baidu.com\"": null
+                },
+                {
+                  "text": "go to docs",
+                  "link:\"http://www.baidu.com\"": null
+                }
+              ]
+            },
+            {
+              "cardImg": "/oz_defender_blue.svg",
+              "subLeading": "A platform to automate Ethereum operations and deliver high-quality products faster.",
+              "desList": [
+                "Automate your smart contract administration with a clean UI.",
+                "Build with private and secure transaction infrastructure.",
+                "Create automated scripts to call your smart contracts.",
+                "Quickly implement security best practices."
+              ],
+              "actions": [
+                {
+                  "text": "visit site",
+                  "link:\"http://www.baidu.com\"": null
+                },
+                {
+                  "text": "go to docs",
+                  "link:\"http://www.baidu.com\"": null
+                }
+              ]
+            }
+          ]
         }
       },
       "regularPath": "/",
       "relativePath": "index.md",
-      "key": "v-a0e7e51a",
-      "path": "/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "345345",
-          "slug": "_345345"
-        }
-      ]
+      "key": "v-0f62a824",
+      "path": "/"
     }
   ],
   "themeConfig": {
+    "logo": "/oz_main_color.svg",
     "nav": [
       {
-        "text": "Home",
-        "link": "/"
+        "text": "Products",
+        "items": [
+          {
+            "text": "Contracts",
+            "link": "/contracts"
+          },
+          {
+            "text": "Defender",
+            "link": "/defender"
+          }
+        ]
       },
       {
-        "text": "Guide",
-        "link": "/guide/"
+        "text": "Security Audits",
+        "link": "/secure"
       },
       {
-        "text": "External",
-        "link": "https://google.com"
+        "text": "Learn",
+        "items": [
+          {
+            "text": "Docs",
+            "link": "/docs"
+          },
+          {
+            "text": "Community",
+            "link": "/community"
+          },
+          {
+            "text": "Github",
+            "link": "/github"
+          }
+        ]
+      },
+      {
+        "text": "Company",
+        "link": "/company"
+      },
+      {
+        "text": "News & Events",
+        "link": "/news"
+      }
+    ],
+    "sidebar": [
+      {
+        "title": "Group 1",
+        "path": "/foo/",
+        "collapsable": false,
+        "sidebarDepth": 1,
+        "children": [
+          "/"
+        ]
+      },
+      {
+        "title": "Group 2",
+        "children": [],
+        "initialOpenGroupIndex": -1
       }
     ]
   }
