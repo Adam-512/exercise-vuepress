@@ -129,7 +129,6 @@ export function resolveSidebarItems (page, regularPath, site, localePath) {
     : themeConfig
 
   const pageSidebarConfig = page.frontmatter.sidebar || localeConfig.sidebar || themeConfig.sidebar
-  console.log('11111',pageSidebarConfig)
   if (pageSidebarConfig === 'auto') {
     return resolveHeaders(page)
   }

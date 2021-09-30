@@ -1,5 +1,6 @@
 const path = require("path");
 module.exports = {
+  title: "Nulls world",
   dest: "public",
   theme: path.resolve(__dirname, "./theme"),
   themeConfig: {
@@ -7,9 +8,10 @@ module.exports = {
     nav: [
       {
         text: "Products",
+        custom: true,
         items: [
-          { text: "Contracts", link: "/contracts" },
-          { text: "Defender", link: "/defender" },
+          { text: "Contracts", des: "A Solidity library of reusable and secure smart contracts", link: "/contracts" },
+          { text: "Defender", des: "A platform to automate smart contract operations", link: "/defender" },
         ],
       },
       { text: "Security Audits", link: "/secure" },

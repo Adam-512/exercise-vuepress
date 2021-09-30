@@ -25,15 +25,19 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {{ childSubItem.text }}
+                  {{ childSubItem.text }}1
                   <a-icon type="link" />
                 </a>
                 <RouterLink v-else :to="link(childSubItem.link)">
-                  {{ childSubItem.text }}
+                  {{ childSubItem.text }}1
                 </RouterLink>
               </a-menu-item>
             </a-menu-item-group>
-            <a-menu-item :key="link(subItem.link)" v-else>
+            <a-menu-item
+              :custommenu="item.custom"
+              :key="link(subItem.link)"
+              v-else
+            >
               <a
                 v-if="isExtlink(subItem.link)"
                 :href="subItem.link"
@@ -44,7 +48,16 @@
                 <a-icon type="link" />
               </a>
               <RouterLink v-else :to="link(subItem.link)">
-                {{ subItem.text }}
+                <span v-if="!item.custom">{{ subItem.text }}</span>
+                <!-- custom menu -->
+                <div v-else class="custom-wrap">
+                  <img v-if="index == 0" src="../assets/contracts.svg" alt="" />
+                  <img v-if="index == 1" src="../assets/defender.svg" alt="" />
+                  <div class="text-box">
+                    <div class="leading">{{ subItem.text }}</div>
+                    <div class="sub">{{ subItem.des }}</div>
+                  </div>
+                </div>
               </RouterLink>
             </a-menu-item>
           </template>
