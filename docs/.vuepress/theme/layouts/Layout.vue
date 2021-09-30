@@ -28,6 +28,8 @@
     </Page>
 
     <a-back-top v-if="$themeConfig.backToTop" />
+
+    <Page-Footer></Page-Footer>
   </div>
 </template>
 
@@ -35,6 +37,7 @@
 // overide
 import Navbar from "@theme/componentsV2/NavBar.vue";
 import Home from "@theme/componentsV2/Home.vue";
+import PageFooter from "@theme/componentsV2/PageFooter.vue";
 
 import Page from "@theme/components/Page.vue";
 import Sidebar from "@theme/components/Sidebar.vue";
@@ -48,6 +51,7 @@ export default {
     Page,
     Sidebar,
     Navbar,
+    PageFooter,
   },
 
   // data () {

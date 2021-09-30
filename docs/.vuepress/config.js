@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-  dest: 'public',
+  dest: "public",
   theme: path.resolve(__dirname, "./theme"),
   themeConfig: {
     logo: "/oz_main_color.svg",
@@ -38,6 +38,80 @@ module.exports = {
           /* ... */
         ],
         initialOpenGroupIndex: -1, // 可选的, 默认值是 0
+      },
+    ],
+    footer: [
+      {
+        title: "Products",
+        content: [
+          {
+            text: "Contracts",
+            link: "#",
+          },
+          {
+            text: "Defender",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Security",
+        content: [
+          {
+            text: "Audits",
+            link: "#",
+          },
+          {
+            text: "Request a security audit",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Learn",
+        content: [
+          {
+            text: "Docs",
+            link: "#",
+          },
+          {
+            text: "Community Forum",
+            link: "#",
+          },
+          {
+            text: "Ethernaut",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Company",
+        content: [
+          {
+            text: "About Us",
+            link: "#",
+          },
+          {
+            text: "Jobs",
+            link: "#",
+          },
+          {
+            text: "Github",
+            link: "#",
+          },
+          {
+            text: "Twitter",
+            link: "#",
+          },
+          {
+            text: "Discord",
+            link: "#",
+          },
+          {
+            text: "Logo Kit",
+            link: "#",
+          },
+        ],
       },
     ],
   },

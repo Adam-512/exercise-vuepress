@@ -59,6 +59,75 @@
           ></Home-Card-Item>
         </a-col>
       </a-row>
+      <div class="bg-bottom"></div>
+    </section>
+
+    <section class="sec4">
+      <div class="container">
+        <div class="quote-wrap">
+          <p class="quote-description">“{{ $frontmatter.section4.quote }}”</p>
+          <div class="quote-footer">
+            <img
+              class="img"
+              src="https://d33wubrfki0l68.cloudfront.net/673c656eebcd47d40d1ee0975b31abfe3f4fb88d/138e5/images/photos/brendan.jpg"
+              alt="Brendan Eich"
+            />
+            <span class="quote-author">
+              <strong>{{ $frontmatter.section4.quoteAuthor }} </strong> |
+              <span>{{ $frontmatter.section4.quoteAuthorDes }}</span>
+              <span> </span
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec5">
+      <div class="main-box">
+        <div class="box-wrapper">
+          <div class="box-main">
+            <p class="box-heading">
+              {{ $frontmatter.section5.secureHeading }}
+            </p>
+            <p class="box-description">
+              {{ $frontmatter.section5.secureDes }}
+            </p>
+            <a :href="$frontmatter.section5.secureActicon.link" class="btn">
+              {{ $frontmatter.section5.secureActicon.text }}
+            </a>
+          </div>
+          <div class="box-side">
+            <img src="../assets/secure.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="sec-header">
+        <p class="heading">{{ $frontmatter.section5.building }}</p>
+        <p class="sub">{{ $frontmatter.section5.buildingSub }}</p>
+      </div>
+
+      <div class="building-step-wrap">
+        <a-row type="flex" justify="space-between">
+          <a-col
+            :span="24"
+            :lg="8"
+            v-for="(item, index) in $frontmatter.section5.buildingGuide"
+            :key="index + 'guide'"
+          >
+            <a :href="item.link">
+              <div class="box">
+                <div class="icon" :class="['icon' + index]"></div>
+                <div class="box-heading">
+                  {{ item.title }}
+                </div>
+                <p class="box-des">
+                  {{ item.des }}
+                </p>
+              </div>
+            </a>
+          </a-col>
+        </a-row>
+      </div>
     </section>
   </div>
 </template>
@@ -92,6 +161,9 @@ export default {
   text-align: center;
   position: relative;
   height: auto;
+  @media (max-width: 576px) {
+    min-height: 300px;
+  }
   .content {
     display: flex;
     flex-direction: column;
@@ -111,6 +183,9 @@ export default {
         @media (max-width: @MQMobile) {
           font-size: 30px;
         }
+        @media (max-width: 576px) {
+          font-size: 24px;
+        }
       }
       .des {
         max-width: 650px;
@@ -118,6 +193,9 @@ export default {
         color: #ffffffcc;
         @media (max-width: @MQMobile) {
           font-size: 16px;
+        }
+        @media (max-width: 576px) {
+          font-size: 14px;
         }
       }
     }
@@ -159,6 +237,10 @@ export default {
   padding-bottom: 120px;
   max-width: 1024px;
   margin: 0 auto;
+  @media screen and(max-width:@MQMobile) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
   .sub-leading {
     margin-bottom: 60px;
     color: #3d3d58;
@@ -182,6 +264,11 @@ export default {
     img {
       width: 100%;
     }
+    @media screen and(max-width:@MQMobile) {
+      img {
+        width: 80%;
+      }
+    }
   }
   .heading {
     margin-bottom: 60px;
@@ -195,6 +282,9 @@ export default {
       font-size: 24px;
       margin-bottom: 30px;
       margin-top: 70px;
+    }
+    @media (max-width: 576px) {
+      padding: 0;
     }
   }
   .challeng-content {
@@ -238,6 +328,8 @@ export default {
 .sec3 {
   background-color: #f8f8fa;
   padding-top: 60px;
+  position: relative;
+  z-index: 1;
   .leading {
     text-align: center;
     color: #3c3c57;
@@ -272,6 +364,262 @@ export default {
       margin-right: 15px;
       @media screen and(max-width:@MQMobile) {
         margin-right: 0;
+      }
+    }
+  }
+
+  .bg-bottom {
+    background-color: #282846;
+    position: absolute;
+    z-index: -1;
+    height: 130px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.sec4 {
+  background-color: #282846;
+  color: #fff;
+  padding-bottom: 120px;
+  .container {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    padding: 0 18px;
+  }
+  .quote-wrap {
+    max-width: 600px;
+    margin: auto;
+    padding: 120px 0;
+    @media (max-width: 576px) {
+      padding: 60px 0;
+    }
+    .quote-description {
+      margin-bottom: 30px;
+      font-size: 21px;
+      max-width: 530px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .quote-footer {
+      display: flex;
+      height: 48px;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+      .quote-author {
+        width: 80%;
+        text-align: center;
+        margin-left: 20px;
+        opacity: 0.8;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: "silka";
+      }
+      img {
+        width: 48px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.sec5 {
+  background: #f8f8fa;
+  padding-bottom: 60px;
+  @media screen and(max-width:@MQMobile) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .main-box {
+    position: relative;
+    top: -120px;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 270px;
+    background: #fff;
+    @media (max-width: 576px) {
+      top: -80px;
+    }
+
+    padding: 35px 30px;
+    background: #fff;
+    border: 1px solid #ededed;
+    box-shadow: 0 8px 14px 0 rgba(60, 60, 60, 9%);
+
+    .box-wrapper {
+      max-width: 775px;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: row;
+      text-align: left;
+      @media screen and(max-width:@MQMobile) {
+        flex-direction: column-reverse;
+        .box-side {
+          margin-bottom: 50px;
+        }
+        .box-main {
+          text-align: center;
+        }
+      }
+      .box-heading {
+        font-size: 26px;
+        margin-bottom: 10px;
+        color: #282846;
+        line-height: 30px;
+        opacity: 0.9;
+        font-family: "silka blod";
+        font-weight: 700;
+      }
+      .box-description {
+        max-width: 700px;
+        font-size: 15px;
+        opacity: 0.8;
+        color: #282846;
+        margin-bottom: 25px;
+        margin-bottom: 30px;
+        font-weight: normal;
+      }
+      .btn {
+        border: solid 1px #4351c5;
+        background-color: transparent;
+        color: #4351c5;
+        box-shadow: none;
+        width: 165px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 8px;
+        padding-left: 8px;
+        letter-spacing: 1px;
+        transition: background-color 0.4s ease, color 0.4s ease,
+          transform 0.4s ease;
+        &:hover {
+          border: solid 1px #4351c5;
+          background-color: #4351c5;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .sec-header {
+    position: relative;
+    top: -30px;
+    margin-bottom: 55px;
+    .heading {
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      color: #3c3c57;
+      font-family: "silka";
+      font-size: 26px;
+    }
+    .sub {
+      max-width: 500px;
+      color: #51516a;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+
+  .building-step-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+    .box {
+      height: 210px;
+      position: relative;
+      max-width: 320px;
+      min-width: 200px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      transform: translateZ(0);
+      transition: transform 0.25s ease-out 0s;
+      padding: 35px 30px;
+      background: #fff;
+      border: 1px solid #ededed;
+      box-shadow: 0 8px 14px 0 rgba(60, 60, 60, 9%);
+      @media screen and(max-width:@MQMobile) {
+        max-width: 70%;
+      }
+      @media screen and(max-width:576px) {
+        max-width: 100%;
+      }
+      &:hover {
+        transform: translateZ(0) scale(1.051);
+        .box-heading {
+          color: #4e5ee4;
+        }
+        .icon.icon0 {
+          background: url("../assets/doc-icon-blue.svg") no-repeat;
+        }
+        .icon.icon1 {
+          background: url("../assets/text-icon-blue.svg") no-repeat;
+        }
+        .icon.icon2 {
+          background: url("../assets/play-icon-blue.svg") no-repeat;
+        }
+      }
+      .icon {
+        position: absolute;
+        right: 33px;
+        top: 33px;
+        opacity: 0.8;
+        transition: all 0.25s linear;
+        width: 24px;
+        height: 24px;
+        &.icon0 {
+          background: url("../assets/doc-icon.svg") no-repeat;
+        }
+        &.icon1 {
+          background: url("../assets/text-icon.svg") no-repeat;
+        }
+        &.icon2 {
+          background: url("../assets/play-icon.svg") no-repeat;
+        }
+      }
+      .box-heading {
+        opacity: 0.9;
+        font-family: "silka";
+        font-size: 18px;
+        color: #282846;
+        line-height: 30px;
+        white-space: nowrap;
+        margin-bottom: 14px;
+        font-weight: 700;
+      }
+      .box-des {
+        font-size: 15px;
+        opacity: 0.8;
+        color: #282846;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        font-weight: 400;
       }
     }
   }

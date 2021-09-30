@@ -77,5 +77,38 @@
           },
         ],
     },
+  "section4":
+    {
+      "quote": "I have a very high opinion of the OpenZeppelin team and their work",
+      "quoteAuthor": "Brendan Eich",
+      "quoteAuthorDes": "Founder of Mozilla and Brave, Javascript creator.",
+    },
+  "section5":
+    {
+      "secureHeading": "In-depth security audits",
+      "secureDes": "In an economy where software code powers real money, security is a top priority. We specialize in auditing in high-impact decentralized systems.",
+      "secureActicon": { "text": "learn more", "link": "" },
+
+      "building": "Start building",
+      "buildingSub": "Check out our resources for beginner and experienced smart contracts and blockchain developers.",
+      "buildingGuide":
+        [
+          {
+            "title": "Docs",
+            "link": "#",
+            "des": "Learn everything you need to develop blockchain applications through a complete set of guides and tutorials.",
+          },
+          {
+            "title": "Forum",
+            "link": "#",
+            "des": "Connect with experts, beginners and enthusiasts and discuss about blockchain development, security, design patterns and best practices.",
+          },
+          {
+            "title": "Ethernaut",
+            "link": "#",
+            "des": "A Web3/Solidity based wargame played in Ethereum where each level is a smart contract that needs to be hacked.",
+          },
+        ],
+    },
 }
 ---
