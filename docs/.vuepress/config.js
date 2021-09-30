@@ -1,5 +1,6 @@
 const path = require("path");
 module.exports = {
+  dest: 'public',
   theme: path.resolve(__dirname, "./theme"),
   themeConfig: {
     logo: "/oz_main_color.svg",
