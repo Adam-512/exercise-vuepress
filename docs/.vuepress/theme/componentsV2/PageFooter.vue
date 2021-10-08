@@ -10,7 +10,10 @@
         </div>
       </div>
       <div class="link-box">
-        <div v-for="(item, index) of $themeConfig.footer" :key="index + 'ft'">
+        <div
+          v-for="(item, index) of $themeLocaleConfig.footer"
+          :key="index + 'ft'"
+        >
           <p>{{ item.title }}</p>
           <ul>
             <li v-for="(subItem, i) in item.content">
@@ -20,9 +23,13 @@
         </div>
       </div>
       <div class="rights">
-        <span>© OpenZeppelin 2020</span>
-        <a class="terms" href="/privacy">Privacy</a>
-        <a class="terms" href="/tos">Terms of Use</a>
+        <span>{{ $themeLocaleConfig.copyright.copy }}</span>
+        <a
+          class="terms"
+          :href="item.link"
+          v-for="(item, index) in $themeLocaleConfig.copyright.items"
+          >{{ item.text }}</a
+        >
       </div>
     </div>
   </footer>

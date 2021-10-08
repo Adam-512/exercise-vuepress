@@ -25,11 +25,11 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {{ childSubItem.text }}1
+                  {{ childSubItem.text }}
                   <a-icon type="link" />
                 </a>
                 <RouterLink v-else :to="link(childSubItem.link)">
-                  {{ childSubItem.text }}1
+                  {{ childSubItem.text }}
                 </RouterLink>
               </a-menu-item>
             </a-menu-item-group>
