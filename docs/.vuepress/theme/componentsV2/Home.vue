@@ -15,7 +15,7 @@
       <p class="sub-leading">{{ $frontmatter.section2.subLeading }}</p>
       <a-row>
         <a-col
-          v-for="(imgSrc, index) of $frontmatter.section2.projectsIcons"
+          v-for="(imgSrc, index) of projectsIcons"
           :lg="4"
           :md="8"
           :xs="12"
@@ -135,13 +135,25 @@
 <script>
 import HomeCardItem from "@theme/componentsV2/Home-Card-Item.vue";
 export default {
+  name: "Home",
   components: { HomeCardItem },
   data() {
-    return {};
+    return {
+      projectsIcons: [],
+    };
   },
   computed: {},
   watch: {},
-  created() {},
+  created() {
+    this.projectsIcons = [
+      require("../assets/brave.svg"),
+      require("../assets/augur.svg"),
+      require("../assets/ethfund.svg"),
+      require("../assets/coinbase.svg"),
+      require("../assets/compound.png"),
+      require("../assets/bitgo.svg"),
+    ];
+  },
   mounted() {},
   beforeDestroy() {},
   methods: {},

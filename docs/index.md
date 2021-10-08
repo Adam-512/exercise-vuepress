@@ -11,15 +11,6 @@
   "section2":
     {
       "subLeading": "The world’s leading projects trust OpenZeppelin",
-      "projectsIcons":
-        [
-          "/brave.svg",
-          "/augur.svg",
-          "/ethfund.svg",
-          "/coinbase.svg",
-          "/compound.png",
-          "/bitgo.svg",
-        ],
       "heading": "The challenges of building decentralized applications",
       "challenges":
         [
