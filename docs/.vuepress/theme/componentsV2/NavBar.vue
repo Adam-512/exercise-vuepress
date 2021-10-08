@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Sidebar from "@theme/componentsV2/Sidebar.vue";
+import Sidebar from "@theme/componentsV2/SideBar.vue";
 
 // import Sidebar from "@theme/components/Sidebar.vue";
 import NavLinks from "@theme/componentsV2/NavLinks.vue";
