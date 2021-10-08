@@ -1,5 +1,6 @@
 const path = require("path");
 module.exports = {
+  head: [['link', { rel: 'stylesheet', href: `https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css` }],],
   title: "Nulls world",
   dest: "public",
   theme: path.resolve(__dirname, "./theme"),
@@ -10,8 +11,16 @@ module.exports = {
         text: "Products",
         custom: true,
         items: [
-          { text: "Contracts", des: "A Solidity library of reusable and secure smart contracts", link: "/contracts" },
-          { text: "Defender", des: "A platform to automate smart contract operations", link: "/defender" },
+          {
+            text: "Contracts",
+            des: "A Solidity library of reusable and secure smart contracts",
+            link: "/contracts",
+          },
+          {
+            text: "Defender",
+            des: "A platform to automate smart contract operations",
+            link: "/defender",
+          },
         ],
       },
       { text: "Security Audits", link: "/secure" },
@@ -26,22 +35,40 @@ module.exports = {
       { text: "Company", link: "/company" },
       { text: "News & Events", link: "/news" },
     ],
-    sidebar: [
-      {
-        title: "Group 1", // 必要的
-        path: "/foo/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1, // 可选的, 默认值是 1
-        children: ["/"],
-      },
-      {
-        title: "Group 2",
-        children: [
-          /* ... */
-        ],
-        initialOpenGroupIndex: -1, // 可选的, 默认值是 0
-      },
-    ],
+    sidebar: {
+      sideBarOfLearn: [
+        {
+          text: "Community Forum",
+          link: "#",
+        },
+        {
+          text: "Docs",
+          link: "#",
+        },
+        {
+          text: "Ethernaut",
+          link: "#",
+        },
+      ],
+      sideBarOfCompany: [
+        {
+          text: "About us",
+          link: "#",
+        },
+        {
+          text: "Jobs",
+          link: "#",
+        },
+        {
+          text: "Github",
+          link: "#",
+        },
+        {
+          text: "Blog",
+          link: "#",
+        },
+      ],
+    },
     footer: [
       {
         title: "Products",

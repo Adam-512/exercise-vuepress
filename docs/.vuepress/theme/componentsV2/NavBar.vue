@@ -4,7 +4,7 @@
     <a-row type="flex" align="middle" justify="center">
       <a-col :span="20">
         <a-row class="bar-content" type="flex" justify="space-between">
-          <img :src="$themeConfig.logo" alt="" @click="isOpenDrawer" />
+          <img src="../assets/oz_main_color.svg" alt="" />
           <NavLinks class="links-wrap" />
           <a-row class="drawer-icon" type="flex" align="middle">
             <div class="h-icon-cont" @click="isOpenDrawer">
@@ -16,20 +16,22 @@
     </a-row>
     <!-- mobile sidebar     -->
     <a-drawer
+      width="100%"
       placement="right"
       :closable="false"
       @close="isOpenDrawer"
       :visible="sidebar_visible"
       wrapClassName="sidebarWrap"
-      v-if="shouldShowSidebar"
     >
-      <Sidebar :items="sidebarItems" class="mobile-sidebar"></Sidebar>
+      <Sidebar @closeDrawer="isOpenDrawer" />
     </a-drawer>
   </div>
 </template>
 
 <script>
-import Sidebar from "@theme/components/Sidebar.vue";
+import Sidebar from "@theme/componentsV2/Sidebar.vue";
+
+// import Sidebar from "@theme/components/Sidebar.vue";
 import NavLinks from "@theme/componentsV2/NavLinks.vue";
 import { resolveSidebarItems } from "../util";
 
@@ -45,10 +47,6 @@ export default {
     };
   },
   computed: {
-    shouldShowSidebar() {
-      const { frontmatter } = this.$page;
-      return frontmatter.sidebar !== false && this.sidebarItems.length;
-    },
     sidebarItems() {
       return resolveSidebarItems(
         this.$page,
@@ -108,38 +106,6 @@ export default {
       top: 3rem;
       border: none;
       font-size: 14px;
-    }
-  }
-}
-
-.h-icon-cont {
-  width: 60px;
-  height: 45px;
-  position: relative;
-  left: 18px;
-  cursor: pointer;
-  transform: scale(0.4);
-  transition: all 0.5s ease-in-out 0s;
-  span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    opacity: 1;
-    left: 0px;
-    transform: rotate(0deg);
-    background: rgb(81, 81, 106);
-    border-radius: 9px;
-    transition: all 0.25s ease-in-out 0s;
-    overflow: hidden;
-    &:nth-child(1) {
-      top: 0px;
-    }
-    &:nth-child(2) {
-      top: 18px;
-    }
-    &:nth-child(3) {
-      top: 36px;
     }
   }
 }

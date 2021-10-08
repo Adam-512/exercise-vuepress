@@ -5,7 +5,15 @@ export const siteData = {
   "title": "Nulls world",
   "description": "",
   "base": "/",
-  "headTags": [],
+  "headTags": [
+    [
+      "link",
+      {
+        "rel": "stylesheet",
+        "href": "https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"
+      }
+    ]
+  ],
   "pages": [
     {
       "title": "Home",
@@ -21,14 +29,6 @@ export const siteData = {
         },
         "section2": {
           "subLeading": "The world’s leading projects trust OpenZeppelin",
-          "projectsIcons": [
-            "/brave.svg",
-            "/augur.svg",
-            "/ethfund.svg",
-            "/coinbase.svg",
-            "/compound.png",
-            "/bitgo.svg"
-          ],
           "heading": "The challenges of building decentralized applications",
           "challenges": [
             {
@@ -179,22 +179,40 @@ export const siteData = {
         "link": "/news"
       }
     ],
-    "sidebar": [
-      {
-        "title": "Group 1",
-        "path": "/foo/",
-        "collapsable": false,
-        "sidebarDepth": 1,
-        "children": [
-          "/"
-        ]
-      },
-      {
-        "title": "Group 2",
-        "children": [],
-        "initialOpenGroupIndex": -1
-      }
-    ],
+    "sidebar": {
+      "sideBarOfLearn": [
+        {
+          "text": "Community Forum",
+          "link": "#"
+        },
+        {
+          "text": "Docs",
+          "link": "#"
+        },
+        {
+          "text": "Ethernaut",
+          "link": "#"
+        }
+      ],
+      "sideBarOfCompany": [
+        {
+          "text": "About us",
+          "link": "#"
+        },
+        {
+          "text": "Jobs",
+          "link": "#"
+        },
+        {
+          "text": "Github",
+          "link": "#"
+        },
+        {
+          "text": "Blog",
+          "link": "#"
+        }
+      ]
+    },
     "footer": [
       {
         "title": "Products",

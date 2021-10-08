@@ -3,8 +3,12 @@
     <div class="home-banner">
       <div class="content">
         <div class="wrapper">
-          <h1 class="leading">{{ $frontmatter.banner.leading }}</h1>
-          <p class="des">{{ $frontmatter.banner.description }}</p>
+          <h1 class="leading animate__animated animate__fadeInUp ">
+            {{ $frontmatter.banner.leading }}
+          </h1>
+          <p class="des animate__animated animate__fadeInUp animate__delay-1s">
+            {{ $frontmatter.banner.description }}
+          </p>
         </div>
       </div>
       <div class="bg-left"></div>

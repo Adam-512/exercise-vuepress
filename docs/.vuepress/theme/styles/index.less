@@ -365,7 +365,7 @@ td {
           color: #282846;
           font-family: "silka";
         }
-        .sub{
+        .sub {
           font-size: 14px;
           color: #333333;
           white-space: pre-line;
@@ -393,6 +393,67 @@ td {
 
 .ant-drawer > * {
   transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+// overide drawer
+
+.ant-drawer .ant-drawer-body{
+  padding:0;
+}
+
+// sidebar icon
+.h-icon-cont {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  left: 18px;
+  cursor: pointer;
+  transform: scale(0.4);
+  transition: all 0.5s ease-in-out 0s;
+  span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    opacity: 1;
+    left: 0px;
+    transform: rotate(0deg);
+    background: rgb(81, 81, 106);
+    border-radius: 9px;
+    transition: all 0.25s ease-in-out 0s;
+    overflow: hidden;
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2) {
+      top: 18px;
+    }
+    &:nth-child(3) {
+      top: 36px;
+    }
+  }
+  &.open {
+    span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+    span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    span:nth-child(2),
+    span:nth-child(3) {
+      top: 18px;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    span:nth-child(4) {
+      width: 0%;
+      top: 18px;
+      left: 50%;
+    }
+  }
 }
 
 @import "./mobile.less";
