@@ -3,10 +3,7 @@
     <div class="footer-box">
       <div class="company">
         <div class="logo">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/18b414b543c2102f0b842ec3990956a2fd5fc858/285d7/images/logos/openzeppelin/oz_main_white.svg"
-            alt="OpenZeppelin logo"
-          />
+          <img src="../assets/logo-white.png" alt="logo" />
         </div>
       </div>
       <div class="link-box">
@@ -53,7 +50,7 @@ export default {
 @import "../styles/palette.less";
 
 .footer {
-  background: #282746;
+  background: @mainColorDark;
   color: white;
   padding: 74px 0 20px;
   margin-bottom: 0;
@@ -81,6 +78,9 @@ export default {
     .logo {
       display: flex;
       margin-bottom: 45px;
+      img {
+        height: 35px;
+      }
     }
   }
 

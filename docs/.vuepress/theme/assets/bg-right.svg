@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="437px" height="148px" viewBox="0 0 437 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>右</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="437" height="148"></rect>
+        <linearGradient x1="39.1624821%" y1="50.9237525%" x2="80.8799277%" y2="47.2912556%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.379179414" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-1483.000000, -322.000000)">
+            <g id="编组-4" transform="translate(0.000000, 69.000000)">
+                <g id="右" transform="translate(1483.000000, 253.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="蒙版"></g>
+                    <path d="M-5.68434189e-14,22.6929262 C13.3895835,85.2865222 45.781036,116.58332 97.1743575,116.58332 C174.26434,116.58332 203.553678,81.7040618 247.824065,95.1928576 C292.094453,108.681653 286.21267,128.578482 342.107576,161.301332 C398.002482,194.024181 487.663066,194.024181 525.160738,129.530248 C550.159187,86.5342927 545.567126,50.9218521 511.384557,22.6929262 L-5.68434189e-14,22.6929262 Z" id="路径-13" fill="url(#linearGradient-3)" opacity="0.133493823" mask="url(#mask-2)" transform="translate(270.500000, 102.778238) scale(1, -1) translate(-270.500000, -102.778238) "></path>
+                    <path d="M39,19.6929262 C53.47857,82.2865222 88.5044474,113.58332 144.077632,113.58332 C227.43741,113.58332 259.108875,78.7040618 306.979812,92.1928576 C354.850748,105.681653 358.628765,125.578482 408.931482,158.301332 C459.234199,191.024181 566.325127,191.024181 606.872517,126.530248 C633.904111,83.5342927 628.938574,47.9218521 591.975907,19.6929262 L39,19.6929262 Z" id="路径-13备份" stroke="#FFFFFF" opacity="0.645167151" mask="url(#mask-2)" transform="translate(331.500000, 99.778238) scale(1, -1) translate(-331.500000, -99.778238) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -11,8 +11,12 @@
           </p>
         </div>
       </div>
-      <div class="bg-left"></div>
-      <div class="bg-right"></div>
+      <div class="bg-left">
+        <img src="../assets/bg-left.png" alt="" />
+      </div>
+      <div class="bg-right">
+        <img src="../assets/bg-right.png" alt="" />
+      </div>
     </div>
 
     <section class="sec2">
@@ -170,7 +174,8 @@ export default {
 }
 .home-banner {
   min-height: 400px;
-  background-color: #2a2a48;
+  background: url("../assets/bg.png") no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,10 +228,12 @@ export default {
     background-repeat: no-repeat;
     left: 0;
     top: 0;
-    background-size: contain;
     width: 50%;
-    background-position: top left;
-    background-image: url("../assets/bg_home_left.svg");
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
   }
   .bg-right {
     position: absolute;
@@ -235,10 +242,12 @@ export default {
     background-repeat: no-repeat;
     right: 0;
     top: 0;
-    background-size: contain;
     width: 50%;
-    background-position: top right;
-    background-image: url("../assets/bg_home_right.svg");
+    display: flex;
+    flex-direction: column-reverse;
+    img {
+      width: 100%;
+    }
   }
   @media (max-width: @MQMobile) {
     .bg-left,
@@ -385,7 +394,7 @@ export default {
   }
 
   .bg-bottom {
-    background-color: #282846;
+    background-color: @mainColorDark;
     position: absolute;
     z-index: -1;
     height: 130px;
@@ -397,7 +406,7 @@ export default {
 }
 
 .sec4 {
-  background-color: #282846;
+  background-color: @mainColorDark;
   color: #fff;
   padding-bottom: 120px;
   .container {
@@ -506,9 +515,9 @@ export default {
         font-weight: normal;
       }
       .btn {
-        border: solid 1px #4351c5;
+        border: solid 1px @mainColorDark;
         background-color: transparent;
-        color: #4351c5;
+        color: @mainColorDark;
         box-shadow: none;
         width: 165px;
         border-radius: 6px;
@@ -525,8 +534,8 @@ export default {
         transition: background-color 0.4s ease, color 0.4s ease,
           transform 0.4s ease;
         &:hover {
-          border: solid 1px #4351c5;
-          background-color: #4351c5;
+          border: solid 1px @mainColorDark;
+          background-color: @mainColorDark;
           color: #fff;
         }
       }

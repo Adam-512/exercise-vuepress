@@ -44,6 +44,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+@import "../styles/palette.less";
 .product-card {
   height: 100%;
   background: #ffffff;
@@ -111,13 +112,13 @@ export default {
       &:last-of-type {
         margin-right: 0;
 
-        border: solid 1px #282846;
+        border: solid 1px @mainColorDark;
         background-color: transparent;
-        color: #282846;
+        color: @mainColorDark;
         box-shadow: none;
       }
 
-      background-color: #282846;
+      background-color: @mainColorDark;
       box-shadow: 0 4px 5px 0 rgb(203 203 203 / 81%);
       border-radius: 6px;
       text-align: center;
@@ -139,13 +140,13 @@ export default {
       box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.8);
       font-family: silka;
       &:hover {
-        background-color: #38386d;
+        background-color: @mainColorDark;
         color: #fff;
       }
       &.btn-border {
-        border: solid 1px #282846;
+        border: solid 1px @mainColorDark;
         background-color: transparent;
-        color: #282846;
+        color: @mainColorDark;
         box-shadow: none;
       }
     }

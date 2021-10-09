@@ -4,7 +4,7 @@
     <a-row type="flex" align="middle" justify="center">
       <a-col :span="20">
         <a-row class="bar-content" type="flex" justify="space-between">
-          <img src="../assets/oz_main_color.svg" alt="" />
+          <img src="../assets/logo-black.png" alt="" />
           <NavLinks class="links-wrap" />
           <a-row class="drawer-icon" type="flex" align="middle">
             <div class="h-icon-cont" @click="isOpenDrawer">
@@ -81,8 +81,10 @@ export default {
   }
   .bar-content {
     flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
     img {
-      width: 172px;
+      height: 35px;
     }
   }
 }

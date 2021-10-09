@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="398px" height="150px" viewBox="0 0 398 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>左</title>
+    <defs>
+        <rect id="path-1" x="0" y="0.136450092" width="398" height="148"></rect>
+        <linearGradient x1="44.7743774%" y1="53.6619755%" x2="56.7605247%" y2="43.1482732%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.221836757" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(0.000000, -69.000000)">
+            <g id="编组-4" transform="translate(0.000000, 69.000000)">
+                <g id="左" transform="translate(0.000000, 0.863550)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="蒙版"></g>
+                    <path d="M-96,-39 C-84.1943968,16.4926392 -55.6348352,44.2389588 -10.3213151,44.2389588 C57.648965,44.2389588 83.4733908,13.3165925 122.506616,25.2751462 C161.539841,37.2336999 156.56454,54.8733248 205.636439,83.8839167 C254.708339,112.894509 333.972796,112.894509 367.034514,55.7171169 C389.07566,17.5988558 385.026838,-13.9735165 354.888047,-39 L-96,-39 Z" id="路径-13备份-3" stroke="#FFFFFF" opacity="0.70914335" mask="url(#mask-2)" transform="translate(142.500000, 32.000000) scale(-1, 1) translate(-142.500000, -32.000000) "></path>
+                    <path d="M-103,-19 C-91.9121379,36.4926392 -65.0889018,64.2389588 -22.5302918,64.2389588 C41.3076233,64.2389588 65.5620106,33.3165925 102.222147,45.2751462 C138.882283,57.2336999 134.209463,74.8733248 180.297956,103.883917 C226.386448,132.894509 300.831892,132.894509 331.883569,75.7171169 C352.584687,37.5988558 348.782019,6.0264835 320.475566,-19 L-103,-19 Z" id="路径-13备份-2" fill="url(#linearGradient-3)" opacity="0.158134993" mask="url(#mask-2)" transform="translate(121.000000, 52.000000) scale(-1, 1) translate(-121.000000, -52.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

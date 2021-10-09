@@ -3,7 +3,7 @@
     <div class="sidebar-wrap">
       <div class="head">
         <div class="logo">
-          <img src="../assets/oz_main_color.svg" alt="" />
+          <img src="../assets/logo-black.png" alt="" />
         </div>
         <div class="h-icon-cont open" @click="$emit('closeDrawer')">
           <span></span><span></span><span></span><span></span>
@@ -28,7 +28,7 @@
         <p class="title">Learn</p>
         <a
           :href="item.link"
-          v-for="(item, index) in $themeConfig.sidebar.sideBarOfLearn"
+          v-for="(item, index) in $themeLocaleConfig.sidebar.sideBarOfLearn"
         >
           {{ item.text }}
         </a>
@@ -38,7 +38,7 @@
         <p class="title">Company</p>
         <a
           :href="item.link"
-          v-for="(item, index) in $themeConfig.sidebar.sideBarOfCompany"
+          v-for="(item, index) in $themeLocaleConfig.sidebar.sideBarOfCompany"
         >
           {{ item.text }}
         </a>
@@ -74,7 +74,7 @@ export default {
   align-items: center;
   border-bottom: solid 1px #d8d8d8;
   .logo img {
-    width: 172px;
+    height: 35px;
   }
 }
 
