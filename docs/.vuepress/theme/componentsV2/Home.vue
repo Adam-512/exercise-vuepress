@@ -174,7 +174,9 @@ export default {
 }
 .home-banner {
   min-height: 400px;
-  background: url("../assets/bg.png") no-repeat;
+  background-color: @mainColor;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -182,6 +184,22 @@ export default {
   text-align: center;
   position: relative;
   height: auto;
+
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 576px) {
     min-height: 300px;
   }
