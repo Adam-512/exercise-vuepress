@@ -8,6 +8,7 @@ module.exports = {
         href: `https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css`,
       },
     ],
+    ["link", { rel: "icon", href: "/favicon.ico" }],
   ],
   dest: "public",
   locales: {

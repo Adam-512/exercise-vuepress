@@ -250,7 +250,7 @@ export default {
     display: flex;
     flex-direction: column;
     img {
-      width: 100%;
+      width: 50%;
     }
   }
   .bg-right {
@@ -263,8 +263,9 @@ export default {
     width: 50%;
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-end;
     img {
-      width: 100%;
+      width: 50%;
     }
   }
   @media (max-width: @MQMobile) {
