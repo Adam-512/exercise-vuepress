@@ -79,7 +79,7 @@ export default {
       display: flex;
       margin-bottom: 45px;
       img {
-        height: 35px;
+        height: 27px;
       }
     }
   }
