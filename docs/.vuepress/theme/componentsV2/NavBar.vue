@@ -2,7 +2,7 @@
   <div class="navbar">
     <!-- pc Nav -->
     <a-row type="flex" align="middle" justify="center">
-      <a-col :span="20">
+      <a-col span="24">
         <a-row class="bar-content" type="flex" justify="space-between">
           <img src="../assets/logo-black.png" alt="" />
           <NavLinks class="links-wrap" />
@@ -75,6 +75,8 @@ export default {
 .navbar {
   .ant-row-flex {
     height: 70px;
+    max-width: 1024px;
+    margin: 0 auto;
   }
   .drawer-icon {
     display: none;
