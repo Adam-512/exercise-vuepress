@@ -86,7 +86,7 @@ export default {
     display: flex;
     align-items: center;
     img {
-      height: 27px;
+      height: 33px;
     }
   }
 }
