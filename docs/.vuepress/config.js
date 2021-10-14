@@ -14,13 +14,13 @@ module.exports = {
   locales: {
     "/": {
       lang: "en-us",
-      title: "Nulls world",
-      description: "Nulls world",
+      title: "Nulls Network",
+      description: "提供丰富的区块链基础设施和服务。",
     },
     "/zh-cn/": {
       lang: "zh-cn",
-      title: "Nulls 世界",
-      description: "Nulls 世界",
+      title: "Nulls Network ",
+      description: "提供丰富的区块链基础设施和服务。",
     },
   },
   theme: path.resolve(__dirname, "./theme"),

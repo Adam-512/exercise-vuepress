@@ -5,8 +5,8 @@
   "actionBtn": { "type": "primary" },
   "banner":
     {
-      "leading": "The standard for secure blockchain applications",
-      "description": "OpenZeppelin provides security products to build,automate,and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products.",
+      "leading": "Be just the one you wanna be.",
+      "description": "Law is the bottom line of social morality, and it is to solve the most basic and superficial problems. It do not solve the fundamental problems of culture, the problems of culture can only be solved by the awakening of culture."
     },
   "section2":
     {
