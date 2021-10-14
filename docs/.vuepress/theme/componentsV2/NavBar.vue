@@ -93,11 +93,15 @@ export default {
 
 @media (max-width: @MQMobile) {
   .navbar {
+    .bar-content {
+      padding: 0 18px;
+    }
     .links-wrap {
       display: none;
     }
     .drawer-icon {
       display: flex;
+      margin-right: 0;
     }
   }
 
