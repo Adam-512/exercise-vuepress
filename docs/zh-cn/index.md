@@ -73,32 +73,32 @@
     {
       "quote": "现在看起来还很弱小，但他是摩天大厦的地基。",
       "quoteAuthor": "Nullser",
-      "quoteAuthorDes": "Founder of Mozilla and Brave, Javascript creator.",
+      "quoteAuthorDes": "不知道哪里的无名小卒",
     },
   "section5":
     {
       "secureHeading": "安全审计",
-      "secureDes": "In an economy where software code powers real money, security is a top priority. We specialize in auditing in high-impact decentralized systems.",
+      "secureDes": "安全问题是区块链应用的头等大事，我们联系第三方安全公司对产品进行了规范的安全审计。目前mighty已通过新加坡安全公司Horangi的安全审计，其他项目正在进行中。",
       "secureActicon": { "text": "learn more", "link": "" },
 
-      "building": "Start building",
-      "buildingSub": "Check out our resources for beginner and experienced smart contracts and blockchain developers.",
+      "building": "建设 Nulls world",
+      "buildingSub": "开发者们可以通过阅读我们的资料和源码，来共同建设 Nulls world.",
       "buildingGuide":
         [
           {
-            "title": "Docs",
+            "title": "文档",
             "link": "#",
-            "des": "Learn everything you need to develop blockchain applications through a complete set of guides and tutorials.",
+            "des": "这里有一切关于Nulls world的资料，开发者可以通过查看文档和源代码参与到Nulls world的建设中。",
           },
           {
-            "title": "Forum",
+            "title": "社区",
             "link": "#",
-            "des": "Connect with experts, beginners and enthusiasts and discuss about blockchain development, security, design patterns and best practices.",
+            "des": "与更多的开发者、专家联系，可以提出您的疑问和建议，与Nulls world一同成长。",
           },
           {
-            "title": "Ethernaut",
+            "title": "公链",
             "link": "#",
-            "des": "A Web3/Solidity based wargame played in Ethereum where each level is a smart contract that needs to be hacked.",
+            "des": "提供更快更高效的区块链共识，兼容EVM的生产环境，方便其他项目迁移到Nulls World生态中。",
           },
         ],
     },
