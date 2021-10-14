@@ -24,8 +24,8 @@
       <a-row>
         <a-col
           v-for="(imgSrc, index) of projectsIcons"
-          :lg="4"
-          :md="8"
+          :lg="6"
+          :md="6"
           :xs="12"
         >
           <div class="icon-wrap"><img :src="imgSrc" alt="" /></div>
@@ -60,7 +60,8 @@
           v-for="(item, index) in $frontmatter.section3.productCards"
         >
           <Home-Card-Item
-            :cardImg="item.cardImg"
+            :cardHead="item.cardHead"
+            :cardImg="carItemHeadImg[index]"
             :subLeading="item.subLeading"
             :desList="item.desList"
             :actions="item.actions"
@@ -148,18 +149,21 @@ export default {
   data() {
     return {
       projectsIcons: [],
+      carItemHeadImg: [],
     };
   },
   computed: {},
   watch: {},
   created() {
     this.projectsIcons = [
-      require("../assets/brave.svg"),
-      require("../assets/augur.svg"),
-      require("../assets/ethfund.svg"),
-      require("../assets/coinbase.svg"),
-      require("../assets/compound.png"),
-      require("../assets/bitgo.svg"),
+      require("../assets/home-partner/mightychat@3x.png"),
+      require("../assets/home-partner/mightymvx@3x.png"),
+      require("../assets/home-partner/nullsworld@3x.png"),
+      require("../assets/home-partner/zkRandom@3x.png"),
+    ];
+    this.carItemHeadImg = [
+      require("../assets/zkrandom-card-head.png"),
+      require("../assets/nullsworld-card-head.png"),
     ];
   },
   mounted() {},
@@ -306,11 +310,13 @@ export default {
     line-height: 70px;
     display: inline-block;
     img {
-      width: 100%;
+      width: 160px;
+      // width: 160px;
     }
     @media screen and(max-width:@MQMobile) {
       img {
-        width: 80%;
+        width: 120px;
+        // width: 80%;
       }
     }
   }

@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="product-card">
-      <div class="card-header"><img :src="cardImg" alt="" /></div>
+      <div class="card-header">
+        <img :src="cardImg" alt="" /><span>{{ cardHead }}</span>
+      </div>
       <div class="card-content">
         <p class="des">
           {{ subLeading }}
@@ -26,6 +28,7 @@
 <script>
 export default {
   props: {
+    cardHead: "",
     cardImg: "",
     subLeading: "",
     desList: [],
@@ -70,8 +73,12 @@ export default {
     justify-content: center;
     align-items: center;
     flex-basis: 110px;
+    font-family: "silka";
+    font-weight: bold;
+    font-size: 20px;
     img {
       height: 36px;
+      margin-right: 10px;
     }
   }
   .card-content {

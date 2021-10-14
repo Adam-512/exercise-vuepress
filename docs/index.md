@@ -6,7 +6,7 @@
   "banner":
     {
       "leading": "Be just the one you wanna be.",
-      "description": "Law is the bottom line of social morality, and it is to solve the most basic and superficial problems. It do not solve the fundamental problems of culture, the problems of culture can only be solved by the awakening of culture."
+      "description": "Law is the bottom line of social morality, and it is to solve the most basic and superficial problems. It do not solve the fundamental problems of culture, the problems of culture can only be solved by the awakening of culture.",
     },
   "section2":
     {
@@ -35,7 +35,7 @@
       "productCards":
         [
           {
-            "cardImg": "/oz_contracts_blue.svg",
+            "cardHead": "Zkrandom",
             "subLeading": "A library of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity.",
             "desList":
               [
@@ -51,7 +51,7 @@
               ],
           },
           {
-            "cardImg": "/oz_defender_blue.svg",
+            "cardHead": "Nullsworld",
             "subLeading": "A platform to automate Ethereum operations and deliver high-quality products faster.",
             "desList":
               [

@@ -36,7 +36,7 @@
       "productCards":
         [
           {
-            "cardImg": "/oz_contracts_blue.svg",
+            "cardHead": "Zkrandom",
             "subLeading": "这一个基于VRF实现的链上随机数的方案，当前实现了EVM和ink!版本，已完成了Heco/BSC/MVX的主网部署。",
             "desList":
               [
@@ -52,7 +52,7 @@
               ],
           },
           {
-            "cardImg": "/oz_defender_blue.svg",
+            "cardHead": "Nullsworld",
             "subLeading": "Nulls World的1.0版本实现，实现了基于zkRandom生成NFT资产和简单的战斗逻辑。",
             "desList":
               [
